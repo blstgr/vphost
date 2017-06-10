@@ -1,0 +1,7 @@
+.list-group-item{
+    border: none;
+    &:nth-child(odd){
+      background-color: $gray-lighter;
+    }
+
+}

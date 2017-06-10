@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+.title {
+  &-l,
+  &-m,
+  &-s {
+    margin-top: 1.414em;
+    margin-bottom: .5em;
+    letter-spacing: 0.3px;
+    font: {
+      family: $headings-font-family;
+      weight: $headings-font-weight;
+    }
+    line-height:   $headings-line-height;
+    color: $headings-color;
+  }
+}
+.title-l {
+  text-align: center;
+    font-size: $font-size-h1;
+}
+.title-m {
+  text-align: center;
+  margin-bottom: 1.414em;
+    font-size: $font-size-h2;
+}
+.title-s {
+  text-align: center;
+    font-size: $font-size-h3;
+}
+
+.paragraph {
+  line-height: $line-height-pargraph;
+  &+&{
+    margin-top: 1.3em;
+  }
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'typicons';
+  src: url("../font/typicons.eot");
+  src: url("../font/typicons.eot?#iefix") format('embedded-opentype'),
+       url("../font/typicons.woff") format('woff'),
+       url("../font/typicons.ttf") format('truetype'),
+       url("../font/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo{
+  font-family:  $headings-font-family;
+}
+.page-section{
+  padding: 44px 0;
+}
+.social-links{
+  float: right;
+  margin-top: 27px;
+  font-size: $font-size-h2;
+
+    a+a{
+     margin-left: 13px;
+   }
+}
+footer{
+  background-color: $brand-success-dark;
+  color: $base-light;
+  text-align: center;
+  &.page-section{
+    padding-bottom: 0;
+  }
+ .form-control{
+     height: 36px;
+      width: 245px;
+      border-radius: 0;
+      border: 2px solid #fff;
+      background:  darken($brand-success-dark, 5%);
+  }
+ .input-group{
+      width: 68%;
+}
+
+
+  .title-m{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $base-light;
+  }
+}
+.footer-footer{
+  padding: 18px 0;
+  margin-top: 44px;
+  text-align: center;
+  font-family: $headings-font-family;
+  color: $base-light;
+  background:  darken($brand-success-dark, 5%);
+  p{
+    margin: 0;
+  }
+}
+
+.page-container {
+  height: calc(100vh - 231px - 80px);
+}

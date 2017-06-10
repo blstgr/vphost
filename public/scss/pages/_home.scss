@@ -1,0 +1,93 @@
+.header-wrapper {
+  background: {
+    image: url("#");
+    size : cover;
+  }
+}
+.plan {
+  &-basic,
+  &-business,
+  &-pro,
+  &-lux {
+    & > img {
+      opacity   : 0.9;
+      margin-top: 24px;
+      width     : 50px;
+    }
+
+    .title-m {
+      margin-top   : 0;
+      margin-bottom: 0.5em;
+    }
+    .title-s {
+      text-align    : center;
+      text-transform: uppercase;
+      font-size     : inherit;
+    }
+    .caption {
+      padding-top: 0;
+    }
+    .list-group {
+      margin: 27px -13px 0;
+    }
+  }
+}
+.section-features {
+  .row + .row {
+    margin-top: 44px;
+  }
+  .typcn {
+    font-size: $jumbotron-heading-font-size;
+    color    : $brand-info;
+    &::before {
+      position: relative;
+      top     : -25px;
+    }
+  }
+}
+.section-why-us {
+  background: $gray-lighter;
+}
+
+.section-reviews {
+  .panel {
+      margin: 20px;
+  }
+
+}
+
+.section-logos {
+text-align: center;
+border-top: 1px solid $gray-lighter;
+border-bottom: 1px solid  $gray-lighter;
+  img {display: inline-block;}
+  .container {
+    max-width: 960px;
+  }
+
+}
+
+.section-server {
+ text-align: center;
+ border-bottom: 1px solid  $gray-lighter;
+}
+
+.server-img{
+    height: 220px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: $brand-success;
+    font-size: 30px;
+    overflow: hidden;
+
+}
+
+
+@media (min-width: $screen-md) {
+
+  .server-img{ margin: 0;}
+  .at-work { margin-top: 0;}
+
+}

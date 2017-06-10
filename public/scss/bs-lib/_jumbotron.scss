@@ -1,0 +1,22 @@
+
+.jumbotron {
+  text-align: center;
+  background: linear-gradient(45deg, $brand-success 1%, #2e6c9e 64%, #2b6ea5 97%);
+  color: $base-light;
+  & h1,
+  & .title-l {
+    margin: {
+      top   : 1.414em;
+      bottom: 0.5em;
+      left  : auto;
+      right : auto;
+    }
+    width : 80%;
+    letter-spacing: 0.3px;
+  }
+.btn-holder{
+  width: 234px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}

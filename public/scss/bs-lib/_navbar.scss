@@ -1,0 +1,35 @@
+.navbar {
+  font-family: $headings-font-family;
+  &-default {
+    .navbar-toggle {
+      border: none;
+      background-color: transparent;
+      &:hover {
+        background-color: $brand-primary;
+        border-radius: $border-radius-small;
+      }
+      &:active,
+      &:focus{
+        border: none;
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: $base-light;
+      }
+    }
+  }
+  &-nav>li{
+    &:hover {
+      background:  darken($brand-success-dark, 5%);
+    }
+
+  }
+}
+
+@media (min-width: $screen-sm) {
+
+  .navbar-nav > li.active{
+      border-bottom: 3px solid $brand-info;
+  }
+
+}
